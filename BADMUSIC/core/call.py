@@ -646,4 +646,4 @@ class Call(PyTgCalls):
         #         autoend[chat_id] = {}
 
 
-Bad = Call()
+BAD = Call()
