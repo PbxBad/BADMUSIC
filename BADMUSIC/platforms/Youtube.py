@@ -112,7 +112,7 @@ async def download_tg_media(tg_link: str) -> Optional[str]:
 # =============================================
 
 
-class YouTubeAPI:
+class YouTube:
     def __init__(self):
         self.base = "https://www.youtube.com/watch?v="
         self.regex = re.compile(r"(?:youtube\.com|youtu\.be)")
