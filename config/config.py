@@ -24,11 +24,9 @@ BOT_USERNAME = getenv("BOT_USERNAME" , "FlopMusic_Bot")
 # Bot id
 BOT_ID = int(getenv("BOT_ID", "7634367413"))
 
-# Token allow for access youtube songs. [ True = use token data, False = use cookies ]
-TOKEN_ALLOW = os.getenv("TOKEN_ALLOW", "False")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-DB_NAME = "badDB"
+DB_NAME = "BadDB"
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 # Time zone (india)
@@ -48,7 +46,7 @@ DURATION_LIMIT_MIN = int(
 
 EXTRA_PLUGINS = getenv(
     "EXTRA_PLUGINS",
-    "False",
+    "True",
 )
 
 # Fill True if you want to load extra plugins
@@ -56,7 +54,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/Badhacker98/BADMUSIC_PLUGIN",
+    "https://github.com/PbxBad/PLUGINS",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
