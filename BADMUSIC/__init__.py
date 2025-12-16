@@ -30,7 +30,7 @@ app = BADBOT()
 
 userbot = Userbot()
 
-YouTube = YouTubeAPI()
+YouTube = YouTube()
 
 from .platforms import *
 
