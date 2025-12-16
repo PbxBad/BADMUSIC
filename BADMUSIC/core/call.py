@@ -19,7 +19,7 @@ from pytgcalls.types import (
 
 import config
 from strings import get_string
-from BADMUSIC import LOGGER, YouTube, app
+from BADMUSIC import LOGGER, Platform, app
 from BADMUSIC.misc import db
 from BADMUSIC.utils.database import (
     add_active_chat,
@@ -353,7 +353,7 @@ class Call:
             video = True if str(streamtype) == "video" else False
 
             if "live_" in queued:
-                n, link = await YouTube.video(videoid, True)
+                n, link = await Platform.YouTube.video(videoid, True)
                 if n == 0:
                     return await app.send_message(original_chat_id, text=_["call_6"])
 
@@ -383,7 +383,7 @@ class Call:
             elif "vid_" in queued:
                 mystic = await app.send_message(original_chat_id, _["call_7"])
                 try:
-                    file_path, direct = await YouTube.download(
+                    file_path, direct = await Platform.YouTube.download(
                         videoid,
                         mystic,
                         videoid=True,
