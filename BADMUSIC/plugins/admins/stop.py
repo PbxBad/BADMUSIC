@@ -1,4 +1,3 @@
-
 import asyncio
 
 from pyrogram import filters
@@ -93,7 +92,7 @@ async def stop_music(cli, message: Message):
             else:
                 if message.from_user.id not in admins:
                     return await message.reply_text(_["admin_19"])
-    await BAD.st_stream(chat_id)
+    await BAD.stop_stream(chat_id)
     await set_loop(chat_id, 0)
     await message.reply_text(_["admin_9"].format(message.from_user.mention))
 
@@ -161,7 +160,7 @@ async def assistant_banned(client: app, member: ChatMemberUpdated):
                 reply_markup=keyboard,
             )
             # Perform actions like stopping streams or loops
-            await BAD.st_stream(chat_id)
+            await BAD.stop_stream(chat_id)
             await set_loop(chat_id, 0)
             await app.unban_chat_member(chat_id, userbot.id)
             await asyncio.sleep(10)
