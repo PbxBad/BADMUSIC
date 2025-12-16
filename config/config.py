@@ -63,6 +63,21 @@ EXTRA_PLUGINS_FOLDER = getenv("EXTRA_PLUGINS_FOLDER", "plugins")
 
 # Your folder name in your extra plugins repo where all plugins stored
 
+# ═══════════════════
+# (Chatbot wala)
+# ═══════════════════
+
+CHATBOT_REPO = getenv(
+    "CHATBOT_REPO",
+    "https://github.com/YourUsername/YourChatbotRepo",
+)
+
+CHATBOT_ENABLED = getenv(
+    "CHATBOT_ENABLED",
+    "True",
+)
+
+CHATBOT_FOLDER = getenv("CHATBOT_FOLDER", "ChatBot")
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
