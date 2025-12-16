@@ -69,12 +69,12 @@ EXTRA_PLUGINS_FOLDER = getenv("EXTRA_PLUGINS_FOLDER", "plugins")
 
 CHATBOT_REPO = getenv(
     "CHATBOT_REPO",
-    "https://github.com/YourUsername/YourChatbotRepo",
+    "https://github.com/sidhubad143/Chatbot",
 )
 
 CHATBOT_ENABLED = getenv(
     "CHATBOT_ENABLED",
-    "False",
+    "True",
 )
 
 CHATBOT_FOLDER = getenv("CHATBOT_FOLDER", "ChatBot")
