@@ -74,7 +74,7 @@ CHATBOT_REPO = getenv(
 
 CHATBOT_ENABLED = getenv(
     "CHATBOT_ENABLED",
-    "True",
+    "False",
 )
 
 CHATBOT_FOLDER = getenv("CHATBOT_FOLDER", "ChatBot")
