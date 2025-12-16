@@ -30,10 +30,7 @@ app = BADBOT()
 
 userbot = Userbot()
 
-YouTube = YouTube()
-
-from .platforms import *
-
+from .platforms import PlaTForms
 
 Platform = PlaTForms()
 HELPABLE = {}
