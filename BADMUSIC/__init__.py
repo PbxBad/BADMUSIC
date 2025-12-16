@@ -30,7 +30,10 @@ app = BADBOT()
 
 userbot = Userbot()
 
-from .platforms import PlaTForms
+YouTube = YouTubeAPI()
+
+from .platforms import *
+
 
 Platform = PlaTForms()
 HELPABLE = {}
